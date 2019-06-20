@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link href="/main.css" rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigate">
+            <div class="navigate__months"><button class="btn js-previousMonth">Назад</button>
+                <p class="js-displayedMonth displayedMonth"></p>
+                <button class="btn js-nextMonth">Вперёд</button>
+            </div>
+            <button type="button" class="js-actualMonth btn">Сегодня</button>
+        </div>
+    </header>
+    <main id="main" class="calendar_plate"></main>
+    <div class="js-modal-overlay overlay close">
+        <form class="modal">
+            <div class="modal__form">
+
+                <input type="text" name="event" placeholder="Событие" autofocus>
+
+
+                <div>
+                    <button type="reset" class="btn">Отмена</button>
+                    <button type="submit" class="btn">Сохранить</button></div>
+
+            </div>
+        </form>
+    </div>
+    <script src='/main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.calendar_plate {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.cell {
+    width: calc(100%/7);
+    border: 1px solid #eeeeee;
+    height: 100px;
+    padding: 5px;
+    overflow: scroll;
+
+}
+
+.actual-cell {
+    color: black;
+}
+
+.another-cell {
+    color: #b3b3b3;
+}
+
+.today {
+    background-color: #f4f4f4;
+}
+
+.header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 2px -2px #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 45px 15px 45px;
+}
+
+.navigate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navigate__months {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    margin-right: 15px;
+}
+
+.btn {
+    padding: 5px;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+}
+
+.displayedMonth {
+    min-width: 120px;
+    text-align: center;
+}
+
+.modal {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.modal__form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #eeeeee;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 170, 238, 0.1);
+}
+
+.close {
+    display: none
+}
+
+.event {
+    background: rgba(0, 170, 238, 0.1);
+}
